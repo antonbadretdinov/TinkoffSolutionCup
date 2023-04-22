@@ -6,13 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+
+    <com.example.tinkoffsolutioncupfinal.ui.Header
+        android:id="@+id/header1"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.tinkoffsolutioncupfinal.ui.Header
+        android:id="@+id/header2"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header1"
+        app:subheader="Subheader" />
+
+    <com.example.tinkoffsolutioncupfinal.ui.Header
+        android:id="@+id/header3"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header2"
+        app:title="Title"/>
+
+    <com.example.tinkoffsolutioncupfinal.ui.Header
+        android:id="@+id/header4"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        app:description="Description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header3"
+        app:title="Title" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

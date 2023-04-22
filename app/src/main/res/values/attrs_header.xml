@@ -1,0 +1,11 @@
+<resources>
+    <declare-styleable name="HeaderView">
+        <attr name="exampleString" format="string" />
+        <attr name="exampleDimension" format="dimension" />
+        <attr name="exampleColor" format="color" />
+        <attr name="exampleDrawable" format="color|reference" />
+        <attr name="title" format="string"/>
+        <attr name="subheader" format="string"/>
+        <attr name="description" format="string"/>
+    </declare-styleable>
+</resources>
