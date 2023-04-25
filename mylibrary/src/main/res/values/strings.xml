@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="item_title_default">Title</string>
+    <string name="item_description_default">Description</string>
+</resources>

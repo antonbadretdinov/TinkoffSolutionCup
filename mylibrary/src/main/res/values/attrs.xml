@@ -4,4 +4,10 @@
         <attr name="customAttribute" format="string" />
         <!-- Add any additional custom attributes here -->
     </declare-styleable>
+
+    <declare-styleable name="SimpleItem">
+        <attr name="title" format="string" />
+        <attr name="description" format="string" />
+        <attr name="isDarkStyle" format="boolean"/>
+    </declare-styleable>
 </resources>

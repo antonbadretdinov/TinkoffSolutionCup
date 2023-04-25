@@ -3,4 +3,12 @@
     <color name="text_button">#428BF9</color>
     <color name="button_background">#EBEBEB</color>
     <color name="button_background_pressed">#DFDFDF</color>
+
+    <color name="item_title_color">#333333</color>
+    <color name="item_description_color">#9299A2</color>
+    <color name="item_title_color_dark">#FFFFFF</color>
+    <color name="item_description_color_dark">#FFFFFF</color>
+    <color name="item_background_dark">#C7C7C7</color>
+    <color name="item_background_light">#FFFFFF</color>
+    <color name="item_shadow_color">#A6A6A6</color>
 </resources>
