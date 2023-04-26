@@ -2,4 +2,6 @@
 <resources>
     <string name="item_title_default">Title</string>
     <string name="item_description_default">Description</string>
+    <string name="header_header_default">Header</string>
+    <string name="header_subheader_default">Subheader</string>
 </resources>

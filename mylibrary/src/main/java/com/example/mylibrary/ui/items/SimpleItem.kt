@@ -1,4 +1,4 @@
-package com.example.mylibrary.ui.headers
+package com.example.mylibrary.ui.items
 
 import android.content.Context
 import android.graphics.Typeface
@@ -21,8 +21,8 @@ class SimpleItem @JvmOverloads constructor(
     init {
         LayoutInflater.from(context).inflate(R.layout.simple_item_layout, this, true)
 
-        titleTextView = findViewById(R.id.headerTitle)
-        descriptionTextView = findViewById(R.id.headerDescription)
+        titleTextView = findViewById(R.id.header_header)
+        descriptionTextView = findViewById(R.id.header_subheader)
         titleTextView.typeface = Typeface.create("roboto",Typeface.NORMAL)
         descriptionTextView.typeface = Typeface.create("roboto",Typeface.NORMAL)
 
