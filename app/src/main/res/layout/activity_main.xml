@@ -10,8 +10,8 @@
         android:id="@+id/customButton"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,6 +24,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="30dp"
         app:description="Any description"
+        app:isDarkStyle="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/customButton"
@@ -35,12 +36,25 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         app:header="Any header"
+        app:isDarkStyle="false"
         app:subheader="Any subheader"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/simpleItem" />
+
+    <com.example.mylibrary.ui.headers.SimpleButtonHeader
+        android:id="@+id/simple_button_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        app:buttonText="Button text here"
+        app:isDarkStyle="false"
+        app:layout_constraintTop_toBottomOf="@id/simpleHeader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
 
 
 

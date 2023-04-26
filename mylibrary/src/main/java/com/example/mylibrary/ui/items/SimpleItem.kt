@@ -1,5 +1,6 @@
 package com.example.mylibrary.ui.items
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.Typeface
 import android.graphics.drawable.GradientDrawable
@@ -10,6 +11,7 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 import com.example.mylibrary.R
 
+@SuppressLint("CustomViewStyleable")
 class SimpleItem @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : LinearLayout(context, attrs, defStyleAttr) {
@@ -26,11 +28,11 @@ class SimpleItem @JvmOverloads constructor(
         titleTextView.typeface = Typeface.create("roboto",Typeface.NORMAL)
         descriptionTextView.typeface = Typeface.create("roboto",Typeface.NORMAL)
 
-        val typedArray = context.obtainStyledAttributes(attrs, R.styleable.SimpleItem)
+        val typedArray = context.obtainStyledAttributes(attrs, R.styleable.Item)
 
-        val title = typedArray.getString(R.styleable.SimpleItem_title)
-        val description = typedArray.getString(R.styleable.SimpleItem_description)
-        val isDarkStyle = typedArray.getBoolean(R.styleable.SimpleItem_isDarkStyle, false)
+        val title = typedArray.getString(R.styleable.Item_title)
+        val description = typedArray.getString(R.styleable.Item_description)
+        val isDarkStyle = typedArray.getBoolean(R.styleable.Item_isDarkStyle, false)
 
         titleTextView.text = title ?: context.resources.getString(R.string.item_title_default)
         descriptionTextView.text = description ?: context.resources.

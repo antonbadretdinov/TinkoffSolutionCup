@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="SimpleItem">
+    <declare-styleable name="Item">
+        <attr name="isDarkStyle" format="boolean"/>
+
         <attr name="title" format="string" />
         <attr name="description" format="string" />
+
         <attr name="header" format="string" />
         <attr name="subheader" format="string" />
-        <attr name="isDarkStyle" format="boolean"/>
+
+        <attr name="buttonText" format="string"/>
     </declare-styleable>
 </resources>
