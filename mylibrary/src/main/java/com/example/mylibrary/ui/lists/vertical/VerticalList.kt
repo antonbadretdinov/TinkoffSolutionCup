@@ -36,7 +36,7 @@ class VerticalList @JvmOverloads constructor(
         headerTextView.text = header ?: context.resources.getString(R.string.header_header_default)
 
         if (isDarkStyle) {
-            backgroundColor = ContextCompat.getColor(context, R.color.header_background_dark)
+            backgroundColor = ContextCompat.getColor(context, R.color.item_background_dark)
             setBackgroundColor(R.drawable.simple_header_background_dark)
         } else {
             backgroundColor = ContextCompat.getColor(context, R.color.header_background_light)

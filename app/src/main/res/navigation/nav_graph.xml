@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graoh"
+    app:startDestination="@id/buttonFragment">
+
+    <fragment
+        android:id="@+id/buttonFragment"
+        android:name="com.example.tinkoffsolutioncupfinal.fragments.button.ButtonFragment"
+        android:label="fragment_button"
+        tools:layout="@layout/fragment_button" >
+        <action
+            android:id="@+id/action_buttonFragment_to_itemFragment"
+            app:destination="@id/itemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemFragment"
+        android:name="com.example.tinkoffsolutioncupfinal.fragments.item.ItemFragment"
+        android:label="fragment_item"
+        tools:layout="@layout/fragment_item" >
+        <action
+            android:id="@+id/action_itemFragment_to_headerFragment"
+            app:destination="@id/headerFragment" />
+        <action
+            android:id="@+id/action_itemFragment_to_buttonFragment"
+            app:destination="@id/buttonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/headerFragment"
+        android:name="com.example.tinkoffsolutioncupfinal.fragments.headers.HeaderFragment"
+        android:label="fragment_header"
+        tools:layout="@layout/fragment_header" >
+        <action
+            android:id="@+id/action_headerFragment_to_buttonHeaderFragment"
+            app:destination="@id/buttonHeaderFragment" />
+        <action
+            android:id="@+id/action_headerFragment_to_itemFragment"
+            app:destination="@id/itemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/buttonHeaderFragment"
+        android:name="com.example.tinkoffsolutioncupfinal.fragments.headers.ButtonHeaderFragment"
+        android:label="fragment_button_header"
+        tools:layout="@layout/fragment_button_header" >
+        <action
+            android:id="@+id/action_buttonHeaderFragment_to_verticalListFragment"
+            app:destination="@id/verticalListFragment" />
+        <action
+            android:id="@+id/action_buttonHeaderFragment_to_headerFragment"
+            app:destination="@id/headerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/verticalListFragment"
+        android:name="com.example.tinkoffsolutioncupfinal.fragments.lists.vertical.VerticalListFragment"
+        android:label="fragment_vertical_list"
+        tools:layout="@layout/fragment_vertical_list" >
+        <action
+            android:id="@+id/action_verticalListFragment_to_buttonHeaderFragment"
+            app:destination="@id/buttonHeaderFragment" />
+        <action
+            android:id="@+id/action_verticalListFragment_to_lightVerticalButtonListFragment"
+            app:destination="@id/lightVerticalButtonListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lightVerticalButtonListFragment"
+        android:name="com.example.tinkoffsolutioncupfinal.fragments.lists.vertical.LightVerticalButtonListFragment"
+        android:label="fragment_light_vertical_button_list"
+        tools:layout="@layout/fragment_light_vertical_button_list" >
+        <action
+            android:id="@+id/action_lightVerticalButtonListFragment_to_darkVerticalButtonListFragment"
+            app:destination="@id/darkVerticalButtonListFragment" />
+        <action
+            android:id="@+id/action_lightVerticalButtonListFragment_to_verticalListFragment"
+            app:destination="@id/verticalListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/darkVerticalButtonListFragment"
+        android:name="com.example.tinkoffsolutioncupfinal.fragments.lists.vertical.DarkVerticalButtonListFragment"
+        android:label="fragment_dark_vertical_button_list"
+        tools:layout="@layout/fragment_dark_vertical_button_list" >
+        <action
+            android:id="@+id/action_darkVerticalButtonListFragment_to_lightVerticalButtonListFragment"
+            app:destination="@id/lightVerticalButtonListFragment" />
+        <action
+            android:id="@+id/action_darkVerticalButtonListFragment_to_horizontalListFragment"
+            app:destination="@id/horizontalListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/horizontalButtonListFragment"
+        android:name="com.example.tinkoffsolutioncupfinal.fragments.lists.horizontal.HorizontalButtonListFragment"
+        android:label="fragment_horizontal_button_list"
+        tools:layout="@layout/fragment_horizontal_button_list" >
+        <action
+            android:id="@+id/action_horizontalButtonListFragment_to_horizontalListFragment"
+            app:destination="@id/horizontalListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/horizontalListFragment"
+        android:name="com.example.tinkoffsolutioncupfinal.fragments.lists.horizontal.HorizontalListFragment"
+        android:label="fragment_horizontal_list"
+        tools:layout="@layout/fragment_horizontal_list" >
+        <action
+            android:id="@+id/action_horizontalListFragment_to_darkVerticalButtonListFragment"
+            app:destination="@id/darkVerticalButtonListFragment" />
+        <action
+            android:id="@+id/action_horizontalListFragment_to_horizontalButtonListFragment"
+            app:destination="@id/horizontalButtonListFragment" />
+    </fragment>
+</navigation>
