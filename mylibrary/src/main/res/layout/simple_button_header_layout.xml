@@ -1,6 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/simple_header"
+    android:id="@+id/vertical_list_layout"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
@@ -13,13 +13,13 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/header_header"
+            android:id="@+id/vertical_list_header"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/header_subheader"
+            android:id="@+id/item_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="16sp" />
@@ -32,8 +32,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/linearLayout"
         android:layout_alignEnd="@+id/item_image"
-        android:layout_alignParentStart="true"
-        android:layout_margin="6dp" />
+        android:layout_alignStart="@+id/linearLayout"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp" />
 
     <ImageView
         android:id="@+id/item_image"

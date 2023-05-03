@@ -1,6 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/simple_header"
+    android:id="@+id/vertical_list_layout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
@@ -12,13 +12,13 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/header_header"
+            android:id="@+id/vertical_list_header"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/header_subheader"
+            android:id="@+id/item_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="16sp" />

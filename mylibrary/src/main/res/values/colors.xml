@@ -8,7 +8,7 @@
     <color name="item_description_color">#9299A2</color>
     <color name="item_title_color_dark">#FFFFFF</color>
     <color name="item_description_color_dark">#FFFFFF</color>
-    <color name="item_background_dark">#C7C7C7</color>
+    <color name="item_background_dark">#E0E0E0</color>
     <color name="item_background_light">#FFFFFF</color>
     <color name="item_shadow_color">#A6A6A6</color>
 
@@ -19,4 +19,6 @@
     <color name="header_background_dark">#C7C7C7</color>
     <color name="header_background_light">#FFFFFF</color>
     <color name="header_shadow_color">#A6A6A6</color>
+
+    <color name="horizontal_item_background">#EBEBEB</color>
 </resources>
