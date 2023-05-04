@@ -22,8 +22,8 @@ class HorizontalListAdapter(private val items: List<ListItemModel>) :
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.title.text = items[position].header
-        holder.description.text = items[position].subheader
+        holder.title.text = items[position].title
+        holder.description.text = items[position].description
     }
 
     override fun getItemCount(): Int {
