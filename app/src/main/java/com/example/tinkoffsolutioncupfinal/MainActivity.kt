@@ -1,11 +1,10 @@
 package com.example.tinkoffsolutioncupfinal
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
-import androidx.navigation.Navigation
+import androidx.navigation.fragment.NavHostFragment
 import com.example.tinkoffsolutioncupfinal.databinding.ActivityMainBinding
-import com.example.tinkoffsolutioncupfinal.helpers.MAIN
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,7 +15,9 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        MAIN = this
-        navController = Navigation.findNavController(this, R.id.nav_host_fragment)
+        val navHostFragment = supportFragmentManager
+            .findFragmentById(R.id.fragmentContainerView) as NavHostFragment
+
+        navController = navHostFragment.navController
     }
 }

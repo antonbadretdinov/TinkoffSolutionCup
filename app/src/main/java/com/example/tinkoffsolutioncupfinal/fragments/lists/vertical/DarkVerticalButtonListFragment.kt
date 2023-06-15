@@ -5,9 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.tinkoffsolutioncupfinal.R
 import com.example.tinkoffsolutioncupfinal.databinding.FragmentDarkVerticalButtonListBinding
-import com.example.tinkoffsolutioncupfinal.helpers.MAIN
 
 
 class DarkVerticalButtonListFragment : Fragment() {
@@ -27,11 +27,11 @@ class DarkVerticalButtonListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.btnBack.setOnClickListener {
-            MAIN.navController.navigate(R.id.action_darkVerticalButtonListFragment_to_lightVerticalButtonListFragment)
+            findNavController().navigate(R.id.action_darkVerticalButtonListFragment_to_lightVerticalButtonListFragment)
         }
 
         binding.btnNext.setOnClickListener {
-            MAIN.navController.navigate(R.id.action_darkVerticalButtonListFragment_to_horizontalListFragment)
+            findNavController().navigate(R.id.action_darkVerticalButtonListFragment_to_horizontalListFragment)
         }
     }
 

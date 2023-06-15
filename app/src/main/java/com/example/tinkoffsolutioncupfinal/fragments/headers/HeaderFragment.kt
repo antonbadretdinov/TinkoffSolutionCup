@@ -5,9 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.tinkoffsolutioncupfinal.R
 import com.example.tinkoffsolutioncupfinal.databinding.FragmentHeaderBinding
-import com.example.tinkoffsolutioncupfinal.helpers.MAIN
 
 
 class HeaderFragment : Fragment() {
@@ -27,11 +27,11 @@ class HeaderFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.btnBack.setOnClickListener {
-            MAIN.navController.navigate(R.id.action_headerFragment_to_itemFragment)
+            findNavController().navigate(R.id.action_headerFragment_to_itemFragment)
         }
 
         binding.btnNext.setOnClickListener {
-            MAIN.navController.navigate(R.id.action_headerFragment_to_buttonHeaderFragment)
+            findNavController().navigate(R.id.action_headerFragment_to_buttonHeaderFragment)
         }
     }
 
