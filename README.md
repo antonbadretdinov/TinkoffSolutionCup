@@ -14,7 +14,7 @@ Technology requirements and limitations:
 - You can only use View/ViewGroup.
 - Dependencies on third-party libraries are prohibited during development.
 - You can use third-party frameworks for testing.
-===
+
 ## Preview of all elements
 ### Button
 <img src="https://github.com/antonbadretdinov/TinkoffSolutionCup/blob/master/button.png" width="200">
